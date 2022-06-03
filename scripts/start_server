@@ -4,3 +4,4 @@ if [ -f "$FILE" ]; then
     rm -rf /var/www/html/index.html 
 fi
 service httpd start
+
