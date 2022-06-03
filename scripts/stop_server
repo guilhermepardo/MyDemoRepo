@@ -3,4 +3,8 @@ isExistApp = `pgrep httpd`
 if [[ -n  $isExistApp ]]; then
     service httpd stop        
 fi
+FILE = /var/www/html/index.html
+if [ -f "$FILE" ]; then
+    rm -rf /var/www/html/index.html 
+fi
 
